@@ -81,6 +81,5 @@ Artificial intelligence is the simulation of human intelligence by machines that
 ---
 
 ## 🛠️ Roadmap
-- API support (OpenAI / Gemini)
 - Multi-task support (summarization, QA, etc.)
 - Web UI frontend
