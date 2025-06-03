@@ -1,7 +1,7 @@
 # llm/main.py
 import argparse
 from generator import generate_text
-from config import MODEL_NAME, MAX_NEW_TOKENS
+from config import MODEL_NAME, MAX_NEW_TOKENS, DEVICE
 from logger import log_info, log_error
 
 def main():
