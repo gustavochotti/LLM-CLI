@@ -55,6 +55,7 @@ The default model is `google/flan-t5-large`, which has:
 ```
 llm/
 ├── config.py
+├── logger.py
 ├── errors.py
 ├── generator.py
 ├── main.py
