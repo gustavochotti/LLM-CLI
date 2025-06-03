@@ -69,7 +69,7 @@ tests/
 ## 💡 Example Output
 
 ```bash
-$ python -m llm.main --prompt "What is artificial intelligence?"
+$ python -m main --prompt "What is artificial intelligence?"
 [INFO] Device set to use cpu
 [INFO] google/flan-t5-large | RESPONSE:
 Artificial intelligence is the simulation of human intelligence by machines that are programmed to think and learn.
