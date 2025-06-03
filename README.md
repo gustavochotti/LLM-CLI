@@ -6,7 +6,7 @@ This is a Python CLI project for generating text using Hugging Face Transformers
 
 ## ✅ Features
 - Text generation using `text2text-generation`
-- Professional logging via Python's `logging` module
+- Logging via Python's `logging` module
 - Unit tests with `pytest`
 - CLI interface via `argparse`
 
