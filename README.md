@@ -60,6 +60,7 @@ If you choose to use a model like `mistralai/Mistral-7B-Instruct-v0.1` (a powerf
 
 1.  Ensure you have sufficient system resources (RAM/VRAM, disk space).
 2.  Use the `--model` argument:
+   
     ```bash
     python -m main --prompt "Write a short sci-fi story about an AI that discovers emotion." --model "mistralai/Mistral-7B-Instruct-v0.1" --tokens 300
     ```
