@@ -44,6 +44,34 @@ The default model is `google/flan-t5-large`, which has:
 
 > For creative and extended generation, consider switching to `mistralai/Mistral-7B-Instruct-v0.1`
 
+For more creative, conversational, or extended text generation, you might consider models primarily designed for `text-generation` (causal LM) tasks.
+
+> **For example, for creative and extended generation, consider switching to `mistralai/Mistral-7B-Instruct-v0.1`.**
+
+If you choose to use a model like `mistralai/Mistral-7B-Instruct-v0.1` (a powerful instruction-following `text-generation` model) or similar large language models (LLMs), please note the following:
+
+* **Task Type:**
+    * `mistralai/Mistral-7B-Instruct-v0.1` is primarily a `text-generation` (auto-regressive or causal) model, not a `text2text-generation` (encoder-decoder) model like T5 or BART.
+    * The CLI is currently configured to use `task="text2text-generation"` when loading the pipeline in the `generator.py` file. For optimal results with models like Mistral, **you will likely need to change this parameter to `task="text-generation"`** in the `load_pipeline_from_cache` function in `generator.py`.
+    * Without this change, the model might not behave as expected (e.g., it might try to continuously complete your prompt rather than follow an instruction and stop).
+
+* **Resource Requirements:**
+    * `mistralai/Mistral-7B-Instruct-v0.1` is a 7-billion parameter model. It will require significantly more RAM (for CPU mode) or VRAM (for GPU mode) compared to the default Flan-T5 model.
+    * The model download size will be substantial (several gigabytes).
+    * Text generation (inference) will be slower, especially on CPU.
+
+* **Output Quality:**
+    * You can expect higher quality, more coherent, creative, and detailed outputs for a wider range of prompts compared to smaller models, especially if the task type and prompt format are correct.
+
+**To experiment with models like this using the CLI (with potential code modifications):**
+
+1.  Ensure you have sufficient system resources (RAM/VRAM, disk space).
+2.  Use the `--model` argument:
+    ```bash
+    python -m main --prompt "Write a short sci-fi story about an AI that discovers emotion." --model "mistralai/Mistral-7B-Instruct-v0.1" --tokens 300
+    ```
+3.  **Be aware of the points above**, especially regarding the potential need to change `task="text-generation"` in `generator.py` and format your prompt for the best results.
+
 ---
 
 ## 📁 Project Structure
@@ -103,7 +131,7 @@ python -m main --prompt "What is artificial intelligence?"
 
 Using a different model and specifying token count:
 ```bash
-python main.py --prompt "Write a short poem about the moon." --model "google/flan-t5-small" --tokens 256
+python -m main --prompt "Write a short poem about the moon." --model "google/flan-t5-small" --tokens 256
 ```
 
 ---
