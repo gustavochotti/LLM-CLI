@@ -19,9 +19,17 @@ python -m main --prompt "What is artificial intelligence?"
 ```
 
 ### Options:
-- `--model`: Hugging Face model name (default: `google/flan-t5-large`)
-- `--tokens`: Maximum number of tokens to generate (default: 512)
+- `--prompt TEXT`: (Required) The input text to generate a response from.
+- `--model MODEL_NAME`: Hugging Face model name (default: `google/flan-t5-large`). This tool is primarily designed for text2text-generation models.
+- `--tokens MAX_TOKENS`:Maximum number of new tokens to generate (default: 512).
 
+---
+
+### Model Management:
+This CLI utilizes models from the Hugging Face Hub via the `transformers` library.
+
+- Automatic Download & Caching: Models specified via the `--model` option (or the default model) are automatically downloaded the first time they are used. They are then stored in a local cache (typically `~/.cache/huggingface/transformers/` or `~/.cache/huggingface/hub/`) for faster access in subsequent uses. Ensure you have an internet connection when using a new model for the first time.
+Model Compatibility: This tool is primarily designed for `text2text-generation` models (e.g., T5, BART). For a list of available models, you can explore the [Hugging Face Model Hub for text2text-generation](https://huggingface.co/models?pipeline_tag=text2text-generation)
 ---
 
 ## 🧪 Running Tests
