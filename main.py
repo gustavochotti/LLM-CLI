@@ -7,7 +7,7 @@ from logger import log_info, log_error
 def main():
     parser = argparse.ArgumentParser(description="Generate text using Hugging Face Transformers.")
     parser.add_argument("--prompt", type=str, required=True, help="Prompt text for generation")
-    parser.add_argument("--model", type=str, default=MODEL_NAME, help="Model name (default: gpt2)")
+    parser.add_argument("--model", type=str, default=MODEL_NAME, help="Model name (default: google/flan-t5-large)")
     parser.add_argument("--tokens", type=int, default=MAX_NEW_TOKENS, help="Max new tokens to generate")
 
     args = parser.parse_args()
