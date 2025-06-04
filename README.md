@@ -98,6 +98,7 @@ Once installed, you can generate text by running the `main.py` script from the p
 
 ```bash
 python -m main --prompt "What is artificial intelligence?"
+```
 
 ---
 
