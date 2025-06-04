@@ -1,3 +1,4 @@
+# errors.py
 from logger import log_error
 
 def handle_exception(e: Exception, context: str = ""):
