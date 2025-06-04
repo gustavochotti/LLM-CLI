@@ -63,13 +63,6 @@ If you choose to use a model like `mistralai/Mistral-7B-Instruct-v0.1` (a powerf
     
 ---
 
-## 🧪 Running Tests
-
-```bash
-pip install pytest
-python -m pytest -s tests/
-```
----
 
 ## 📁 Project Structure
 ```
@@ -92,6 +85,14 @@ LLM-CLI/
 - `Pip` (Python package installer)
 - `pytest` (for testing only)
 
+---
+
+## 🧪 Running Tests
+
+```bash
+pip install pytest
+python -m pytest -s tests/
+```
 ---
 
 ## ⚙️ Installation
