@@ -14,7 +14,9 @@ This is a Python CLI project for generating text using Hugging Face Transformers
 
 ## ⚙️ Options:
 - `--prompt TEXT`: (Required) The input text to generate a response from.
-- `--model MODEL_NAME`: Hugging Face model name (default: `google/flan-t5-large`). This tool is primarily designed for text2text-generation models.
+- `--model MODEL_NAME`: Hugging Face model name
+* Default `google/flan-t5-large`). This tool is primarily designed for text2text-generation models.
+* To change the script's default model, modify the MODEL_NAME variable in the config.py file.
 - `--tokens MAX_TOKENS`:Maximum number of new tokens to generate (default: 512).
 
 ---
