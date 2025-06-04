@@ -121,8 +121,13 @@ Artificial intelligence is the simulation of human intelligence by machines that
 
 ---
 
----
-
 ## 🛠️ Roadmap
 - Multi-task support (summarization, QA, etc.)
+- Allow passing generation parameters (temperature, top_p, etc.) via CLI.
+- More robust model compatibility checking.
 - Web UI frontend
+
+---
+
+📜 License
+This project is licensed under the MIT License - see the LICENSE file for details.
