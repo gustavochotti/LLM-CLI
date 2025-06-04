@@ -47,13 +47,14 @@ The default model is `google/flan-t5-large`, which has:
 ## 📦 Requirements
 - Python 3.8+
 - `transformers`
+- `Pip (Python package installer)`
 - `pytest` (for testing only)
 
 ---
 
 ## 📁 Project Structure
 ```
-llm/
+LLM-CLI/
 ├── config.py
 ├── logger.py
 ├── errors.py
