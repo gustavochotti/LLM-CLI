@@ -1,4 +1,4 @@
-# llm/main.py
+# main.py
 import argparse
 from generator import generate_text
 from config import MODEL_NAME, MAX_NEW_TOKENS, DEVICE
