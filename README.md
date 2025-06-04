@@ -28,14 +28,6 @@ This CLI utilizes models from the Hugging Face Hub via the `transformers` librar
 
 - Automatic Download & Caching: Models specified via the `--model` option (or the default model) are automatically downloaded the first time they are used. They are then stored in a local cache (typically `~/.cache/huggingface/transformers/` or `~/.cache/huggingface/hub/`) for faster access in subsequent uses. Ensure you have an internet connection when using a new model for the first time.
 - Model Compatibility: This tool is primarily designed for `text2text-generation` models (e.g., T5, BART). For a list of available models, you can explore the [Hugging Face Model Hub for text2text-generation](https://huggingface.co/models?pipeline_tag=text2text-generation)
----
-
-## 🧪 Running Tests
-
-```bash
-pip install pytest
-python -m pytest -s tests/
-```
 
 ---
 
@@ -69,6 +61,14 @@ If you choose to use a model like `mistralai/Mistral-7B-Instruct-v0.1` (a powerf
     python -m main --prompt "Write a short sci-fi story about an AI that discovers emotion." --model "mistralai/Mistral-7B-Instruct-v0.1" --tokens 300
     ```
     
+---
+
+## 🧪 Running Tests
+
+```bash
+pip install pytest
+python -m pytest -s tests/
+```
 ---
 
 ## 📁 Project Structure
