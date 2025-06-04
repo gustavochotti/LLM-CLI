@@ -101,6 +101,11 @@ Once installed, you can generate text by running the `main.py` script from the p
 python -m main --prompt "What is artificial intelligence?"
 ```
 
+Using a different model and specifying token count:
+```bash
+python main.py --prompt "Write a short poem about the moon." --model "t5-small" --tokens 100
+```
+
 ---
 
 ## 💡 Example Output
