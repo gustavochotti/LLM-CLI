@@ -44,14 +44,6 @@ The default model is `google/flan-t5-large`, which has:
 
 ---
 
-## 📦 Requirements
-- Python 3.8+
-- `transformers`
-- `Pip (Python package installer)`
-- `pytest` (for testing only)
-
----
-
 ## 📁 Project Structure
 ```
 LLM-CLI/
@@ -65,6 +57,47 @@ LLM-CLI/
 tests/
 ├── test_generator.py
 ```
+
+---
+
+## 📦 Requirements
+- Python 3.8+
+- `transformers`
+- `Pip` (Python package installer)
+- `pytest` (for testing only)
+
+---
+
+## ⚙️ Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/gustavochotti/LLM-CLI.git](https://github.com/gustavochotti/LLM-CLI.git)
+    cd LLM-CLI
+    ```
+
+2.  **(Recommended)** Create and activate a virtual environment:
+    ```bash
+    python -m venv venv
+    # On Windows:
+    # venv\Scripts\activate
+    # On macOS/Linux:
+    # source venv/bin/activate
+    ```
+
+3.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+---
+
+## 🚀 How to Use
+
+Once installed, you can generate text by running the `main.py` script from the project's root directory:
+
+```bash
+python -m main --prompt "What is artificial intelligence?"
 
 ---
 
