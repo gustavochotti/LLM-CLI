@@ -18,14 +18,14 @@ This is a Python CLI project for generating text using Hugging Face Transformers
 python -m main --prompt "What is artificial intelligence?"
 ```
 
-### Options:
+## ⚙️ Options:
 - `--prompt TEXT`: (Required) The input text to generate a response from.
 - `--model MODEL_NAME`: Hugging Face model name (default: `google/flan-t5-large`). This tool is primarily designed for text2text-generation models.
 - `--tokens MAX_TOKENS`:Maximum number of new tokens to generate (default: 512).
 
 ---
 
-### Model Management:
+## 🧠 Model Management:
 This CLI utilizes models from the Hugging Face Hub via the `transformers` library.
 
 - Automatic Download & Caching: Models specified via the `--model` option (or the default model) are automatically downloaded the first time they are used. They are then stored in a local cache (typically `~/.cache/huggingface/transformers/` or `~/.cache/huggingface/hub/`) for faster access in subsequent uses. Ensure you have an internet connection when using a new model for the first time.
