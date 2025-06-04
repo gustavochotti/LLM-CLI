@@ -18,6 +18,8 @@ This is a Python CLI project for generating text using Hugging Face Transformers
 python -m main --prompt "What is artificial intelligence?"
 ```
 
+---
+
 ## ⚙️ Options:
 - `--prompt TEXT`: (Required) The input text to generate a response from.
 - `--model MODEL_NAME`: Hugging Face model name (default: `google/flan-t5-large`). This tool is primarily designed for text2text-generation models.
