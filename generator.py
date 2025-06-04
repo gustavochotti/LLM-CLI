@@ -1,4 +1,4 @@
-# llm/generator.py
+# generator.py
 from transformers import pipeline
 from config import DEVICE
 from errors import handle_exception
