@@ -103,7 +103,7 @@ python -m main --prompt "What is artificial intelligence?"
 
 Using a different model and specifying token count:
 ```bash
-python main.py --prompt "Write a short poem about the moon." --model "t5-small" --tokens 100
+python main.py --prompt "Write a short poem about the moon." --model "google/flan-t5-small" --tokens 256
 ```
 
 ---
