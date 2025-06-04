@@ -29,7 +29,7 @@ python -m main --prompt "What is artificial intelligence?"
 This CLI utilizes models from the Hugging Face Hub via the `transformers` library.
 
 - Automatic Download & Caching: Models specified via the `--model` option (or the default model) are automatically downloaded the first time they are used. They are then stored in a local cache (typically `~/.cache/huggingface/transformers/` or `~/.cache/huggingface/hub/`) for faster access in subsequent uses. Ensure you have an internet connection when using a new model for the first time.
-Model Compatibility: This tool is primarily designed for `text2text-generation` models (e.g., T5, BART). For a list of available models, you can explore the [Hugging Face Model Hub for text2text-generation](https://huggingface.co/models?pipeline_tag=text2text-generation)
+- Model Compatibility: This tool is primarily designed for `text2text-generation` models (e.g., T5, BART). For a list of available models, you can explore the [Hugging Face Model Hub for text2text-generation](https://huggingface.co/models?pipeline_tag=text2text-generation)
 ---
 
 ## 🧪 Running Tests
