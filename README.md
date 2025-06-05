@@ -1,6 +1,6 @@
 # 💬 LLM CLI - Text Generation
 
-This is a Python CLI project for generating text using Hugging Face Transformers models.
+This is a Python CLI project for generating text using Transformers models.
 
 ---
 
